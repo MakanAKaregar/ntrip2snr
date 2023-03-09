@@ -1,5 +1,9 @@
 # ntrip2snr
-Using BKG Ntrip Client and gnssrefl's rinex2snr module to access to real-time streaming SNR data 
+Using BKG Ntrip Client (BNV) and gnssrefl's rinex2snr module to access to real-time streaming SNR data.
+
+The BNC compiled code is available at: https://igs.bkg.bund.de/ntrip/bnc
+
+I tested the v2.12.18 static for OpenSUSE, Ubuntu, Debian and Raspbian.
 
 This example converts 1 min RTCM streams to RINEX 3 files and then to SNR-ready files to be used for real-time processing.
 
