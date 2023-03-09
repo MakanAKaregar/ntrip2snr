@@ -23,6 +23,8 @@ Open the <code>ntrip2snr.bnc</code> file in a text editor and set the following 
 
 Default configuration is set for an orbitray site (AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
 
+Before running ntrip2snr, BNS requires Rinex header as a file with SKL extension stored in <code>$REFL_CODE/rinex/AC67/2023</code>. For running the example configuration file, make sure you copy AC67_RTCM.SKL to mentioned directory. The RINEX header file is often missed in caster server, thus this file needs to be created in advance. 
+
 To run the <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bnc</code>
 
 
