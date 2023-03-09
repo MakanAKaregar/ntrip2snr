@@ -7,7 +7,7 @@ I tested Code Executable "v2.12.18 static" for OpenSUSE, Ubuntu, Debian and Rasp
 
 This example converts 1 min RTCM streams to RINEX 3 files and then to SNR-ready files to be used for real-time processing.
 
-Open <code>ntrip2snr.bnc</code> file in a text editor and set the following configuration input parameters:
+Open <code>ntrip2snr.bnc</code> in a text editor and set the following configuration input parameters:
 
 <code>casterUrlList=</code>Visited Broadcasters [character string, comma separated list], example:  <code>http://user:pass@rtgpsout.unavco.org:2101</code>
 
