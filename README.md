@@ -1,7 +1,7 @@
 # ntrip2snr
 Using BKG Ntrip Client and gnssrefl's rinex2snr module to access to real-time streaming SNR data 
 
-This example converts 1 min RTCM streams to Rinex 3 files and then to SNR-ready files to be used for real-time processing.
+This example converts 1 min RTCM streams to RINEX 3 files and then to SNR-ready files to be used for real-time processing.
 
 Open the <code>ntrip2snr.bnc</code> file in a text editor and set the following configuration input parameters:
 
@@ -23,7 +23,7 @@ Open the <code>ntrip2snr.bnc</code> file in a text editor and set the following 
 
 Default configuration is set for an orbitray site (AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
 
-Before running ntrip2snr, BNS requires Rinex header as a file with SKL extension stored in <code>$REFL_CODE/rinex/AC67/2023</code>. For running the example configuration file, make sure you copy AC67_RTCM.SKL to mentioned directory. The RINEX header file is often missed in caster server, thus this file needs to be created in advance. 
+Before running <code>ntrip2snr.bnc</code>, BNS requires RINEX header as a separate file with SKL extension stored in <code>$REFL_CODE/rinex/AC67/2023</code>. For running the example configuration file, make sure you copy <code>AC67_RTCM.SKL</code> to the mentioned directory. The RINEX header file is often missed in caster servers, thus this file needs to be created in advance. 
 
 To run the <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bnc</code>
 
