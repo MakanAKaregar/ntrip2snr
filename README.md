@@ -9,7 +9,7 @@ Open the <code>ntrip2snr.bnc</code> file in a text editor and set the following 
 
 <code>mountPoints=</code>Mountpoints [character string, semicolon separated list, example: //user:pass@rtgpsout.unavco.org:2101/AC67_RTCM3 RTCM_3.1 USA 57.79 -152.43 no 2
 
-<code>rnxPath=</code>Directory [character string], example: $REFL_CODE/rinex/AC67/2023
+<code>rnxPath=</code>Directory [character string], example: $REFL_CODE/rinex/AC67/2023 where $REFL_CODE is an environmental variable to be used by gnssrefl's rinex2snr module. The rnxPath should be equal to the full-path as: rnxPath=/home/makan/Desktop/GNSS_IR/rinex/AC67/2023
 
 <code>rnxScript=</code>File upload script, full path [character string], example: ./run_rinex2snr.sh
 
