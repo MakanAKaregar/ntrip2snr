@@ -1,7 +1,8 @@
 # ntrip2snr
-Using BKG Ntrip Client and gnssrefl's rinex2snr module to acccess to real-time streaming SNR data 
+Using BKG Ntrip Client and gnssrefl's rinex2snr module to access to real-time streaming SNR data 
 
-This example converts 1 min RTCM streams to RInex 3 and then SNR-ready file to be used for real-time processing 
+This example converts 1 min RTCM streams to Rinex 3 files and then to SNR-ready files to be used for real-time processing.
+
 Open the <code>ntrip2snr.bnc</code> file in a text editor and set the following configuration input parameters:
 
 <code>casterUrlList=</code>Visited Broadcasters [character string, comma separated list], example:  http://user:pass@rtgpsout.unavco.org:2101
@@ -21,6 +22,7 @@ Open the <code>ntrip2snr.bnc</code> file in a text editor and set the following 
 <code>rnxSkel=</code>RINEX skeleton file extension [character string], example: SKL
 
 Default configuration is set for an orbitray site (AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
+
 To run the <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bnc</code>
 
 
