@@ -33,4 +33,4 @@ To run <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bn
 
 Ignore QSslSocket SSL errors if you generally trust the caster server and do not want to be bothered with this.
 
-SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY/snr/sss/</code>, example: <code>$REFL_CODE/2023/snr/AC67/</code>
+SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY/snr/ssss/</code>, example: <code>$REFL_CODE/2023/snr/AC67/</code>
