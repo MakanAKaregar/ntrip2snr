@@ -13,8 +13,6 @@ Open <code>ntrip2snr.bnc</code> in a text editor and set the following configura
 
 <code>mountPoints=</code>Mountpoints [character string, semicolon separated list, example: <code>//user:pass@rtgpsout.unavco.org:2101/AC67_RTCM3 RTCM_3.1 USA 57.79 -152.43 no 2</code>
 
-<code>rnxPath=</code>Directory [character string], example: <code>$REFL_CODE/rinex/AC67/2023</code> where $REFL_CODE is an environmental variable to be used by gnssrefl's rinex2snr module. The <code>rnxPath</code> should be equal to the full-path as: <code>rnxPath=/home/makan/Desktop/GNSS_IR/rinex/AC67/2023</code>
-
 <code>rnxScript=</code>File upload script, full path [character string], example: <code>./run_rinex2snr.sh</code>
 
 <code>rnxIntr=</code>File interval [character string: 1 min|2 min|5 min|10 min|15 min|30 min|1 hour|1 day], example: <code>1 min</code>
@@ -27,8 +25,10 @@ Open <code>ntrip2snr.bnc</code> in a text editor and set the following configura
 
 Default configuration is set for an orbitray site (AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
 
-Before running <code>ntrip2snr.bnc</code>, BNS requires RINEX header as a separate file with SKL extension stored in <code>$REFL_CODE/rinex/AC67/2023</code>. For running the example configuration file, make sure you copy <code>AC67_RTCM.SKL</code> to the mentioned directory. The RINEX header file is often missed in caster servers, thus this file needs to be created in advance. 
+Set a directory to store RINEX 3 files via <code> -key rnxPath $REFL_CODE/rinex/AC67/2023</code> where $REFL_CODE is an environmental variable to be used by gnssrefl's rinex2snr module. 
 
-To run the <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bnc</code>
+Before running <code>ntrip2snr.bnc</code>, BNC requires RINEX header as a separate file with SKL extension stored in <code>$REFL_CODE/rinex/AC67/2023</code> (rnxPath). For running the example configuration file, make sure you copy <code>AC67_RTCM.SKL</code> to the mentioned directory. The RINEX header file is often missed in caster servers, thus this <code>.SKL</code> file needs to be created in advance. 
+
+To run <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/AC67/2023</code>
 
 
