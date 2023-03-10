@@ -1,5 +1,5 @@
 # ntrip2snr
-Using BKG Ntrip Client (BNV) and gnssrefl's rinex2snr module to access to real-time streaming SNR data.
+Using BKG Ntrip Client (BNC) and gnssrefl's rinex2snr module to access to real-time SNR data.
 
 The BNC compiled code is available at: https://igs.bkg.bund.de/ntrip/bnc
 
