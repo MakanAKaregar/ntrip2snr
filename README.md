@@ -23,7 +23,7 @@ Open <code>ntrip2snr.bnc</code> in a text editor and set the following configura
 
 <code>rnxSkel=</code>RINEX skeleton file extension [character string], example: <code>SKL</code>
 
-Default configuration is set for an orbitray site (AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
+Default configuration is set for an orbitray site [AC67](https://www.unavco.org/instrumentation/networks/status/nota/overview/AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
 
 Set a directory to store RINEX 3 files via <code> -key rnxPath $REFL_CODE/rinex/AC67/2023</code> where $REFL_CODE is an environmental variable to be used by gnssrefl's rinex2snr module. 
 
