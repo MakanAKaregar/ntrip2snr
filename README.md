@@ -32,3 +32,5 @@ Before running <code>ntrip2snr.bnc</code>, BNC requires the RINEX header as a se
 To run <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/AC67/2023</code>
 
 Ignore QSslSocket SSL errors if you generally trust the caster server and do not want to be bothered with this.
+
+SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/rinex/AC67/2023</code>
