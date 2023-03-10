@@ -25,12 +25,12 @@ Open <code>ntrip2snr.bnc</code> in a text editor and set the following configura
 
 Default configuration is set for an orbitray site [AC67](https://www.unavco.org/instrumentation/networks/status/nota/overview/AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
 
-Set a directory to store RINEX 3 files via <code> -key rnxPath $REFL_CODE/rinex/AC67/2023</code> where [$REFL_CODE](https://github.com/kristinemlarson/gnssrefl/blob/master/docs/pages/README_install.md) is an environmental variable to be used by gnssrefl's [rinex2snr](https://github.com/kristinemlarson/gnssrefl/blob/master/docs/pages/rinex2snr.md) module. 
+Set a directory to store RINEX 3 files via <code> -key rnxPath $REFL_CODE/rinex/ssss/YYYY</code> where [$REFL_CODE](https://github.com/kristinemlarson/gnssrefl/blob/master/docs/pages/README_install.md) is an environmental variable to be used by gnssrefl's [rinex2snr](https://github.com/kristinemlarson/gnssrefl/blob/master/docs/pages/rinex2snr.md) module, YYYY is the year and ssss is the four character station name., example: <code>-key rnxPath $REFL_CODE/rinex/AC67/2023</code>
 
-Before running <code>ntrip2snr.bnc</code>, BNC requires the RINEX header as a separate file with SKL extension stored in <code>$REFL_CODE/rinex/AC67/2023</code> (rnxPath). For running the example configuration file, make sure you copy <code>AC67_RTCM.SKL</code> to the mentioned directory. The RINEX header file is often missed in caster servers, thus this <code>.SKL</code> file needs to be created in advance. 
+Before running <code>ntrip2snr.bnc</code>, BNC requires the RINEX header as a separate file with SKL extension stored in <code>$REFL_CODE/rinex/ssss/YYYY</code> (rnxPath). For running the example configuration file, make sure you copy <code>AC67_RTCM.SKL</code> to the mentioned directory. The RINEX header file is often missed in caster servers, thus this <code>.SKL</code> file needs to be created in advance. 
 
 To run <code>ntrip2snr: ./bnc-2.12.18-suse42-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/AC67/2023</code>
 
 Ignore QSslSocket SSL errors if you generally trust the caster server and do not want to be bothered with this.
 
-SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/rinex/AC67/2023</code>
+SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY/snr/sss/</code>, example: <code>$REFL_CODE/2023/snr/AC67/</code>
