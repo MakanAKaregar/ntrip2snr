@@ -1,5 +1,5 @@
 # ntrip2snr
-Using [BKG Ntrip Client (BNC)](https://igs.bkg.bund.de/ntrip/bnc) and [gnssrefl](https://github.com/kristinemlarson/gnssrefl)'s rinex2snr module to access to real-time SNR data.
+Using [BKG Ntrip Client (BNC)](https://igs.bkg.bund.de/ntrip/bnc) and [gnssrefl](https://github.com/kristinemlarson/gnssrefl)'s [rt_rinex3_snr] (https://github.com/kristinemlarson/gnssrefl/blob/master/gnssrefl/rt_rinex3_snr.py) module to access to real-time SNR data.
 
 The BNC compiled code is available at: https://igs.bkg.bund.de/ntrip/bnc
 
