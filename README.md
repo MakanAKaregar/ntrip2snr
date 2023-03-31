@@ -46,7 +46,23 @@ SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY
 
 *Note: access to EUREF's caster is public and no user and pass are required.
 
-The configuration input parameters for this example are available in ~/example2/<code>ntrip2snr.bnc</code>
+The configuration input parameters for this example are available in ~/example2/<code>ntrip2snr.bnc</code> and are summerized below:
+
+<code>casterUrlList=http://User:Pass@euref-ip.net:2101</code> 
+
+<code>mountPoints=//Example:Configs@euref-ip.net:2101/WARN00DEU0 RTCM_3.1 DEU 54.17 12.10 no 2</code> 
+
+<code>rnxScript=./run_rinex2snr.sh</code> 
+
+<code>rnxIntr=1 min</code> 
+
+<code>rnxV3=2</code> 
+
+<code>rnxSampl=1 sec</code> 
+
+<code>rnxSkel=SKL</code> 
+
+
 
 Default configuration is set for a GNSS-IR site [WARN](https://epncb.oma.be/_networkdata/siteinfo4onestation.php?station=WARN00DEU) from EUREF's caster caster server (euref-ip.net:2101)
 
