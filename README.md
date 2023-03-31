@@ -10,7 +10,7 @@ The following examples convert 1 min RTCM streams to RINEX 3 files and then to S
 
 ## Example 1: GNSS SNR real-time streaming for site AC67 from UNAVCO's caster: rtgpsout.unavco.org:2101
 
-#Note: you need to reach out [UNAVCO](https://www.unavco.org/data/gps-gnss/real-time/real-time.html) to set up an account with user and pass. 
+*Note: you need to reach out [UNAVCO](https://www.unavco.org/data/gps-gnss/real-time/real-time.html) to set up an account with user and pass. 
 
 Navigate to example1 directory and open <code>ntrip2snr.bnc</code> in a text editor and set the following configuration input parameters:
 
@@ -44,7 +44,7 @@ SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY
 
 ## Example 2: GNSS SNR real-time streaming for site WARN from EUREF's caster: euref-ip.net:2101
 
-#Note: access to EUREF's caster is public and no user and pass are required.
+*Note: access to EUREF's caster is public and no user and pass are required.
 
 The configuration input parameters for this example are available in ~/example2/<code>ntrip2snr.bnc</code>
 
