@@ -34,7 +34,7 @@ Set a directory to store RINEX 3 files via <code> -key rnxPath $REFL_CODE/rinex/
 
 Before running <code>ntrip2snr.bnc</code>, BNC requires the RINEX header as a separate file with SKL extension stored in <code>$REFL_CODE/rinex/ssss/YYYY</code> (rnxPath). For running the example configuration file, make sure you copy <code>AC67_RTCM.SKL</code> to the mentioned directory. The RINEX header file is often missed in caster servers, thus this <code>.SKL</code> file needs to be created in advance. 
 
-Now activate the virtual environment: <code> source ~/env/bin/activate
+Now activate the virtual environment: <code>source ~/env/bin/activate</code>
 
 To run <code>ntrip2snr: ./bnc-2.12.18-suse42(debian8)-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/AC67/2023</code>
 
