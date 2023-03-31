@@ -8,7 +8,7 @@ I tested Code Executable "v2.12.18 static" for OpenSUSE, Ubuntu, Debian and Rasp
 
 The following examples convert 1 min RTCM streams to RINEX 3 files and then to SNR-ready files to be used for real-time processing.
 
-## Example 1: GNSS SNR real-time streaming for site AC67 from UNAVCO's caster: rtgpsout.unavco.org:2101
+## Example 1: GNSS SNR real-time streaming for site [AC67](https://www.unavco.org/instrumentation/networks/status/nota/overview/AC67) from UNAVCO's caster: rtgpsout.unavco.org:2101
 
 *Note: you need to reach out [UNAVCO](https://www.unavco.org/data/gps-gnss/real-time/real-time.html) to set up an account with user and pass. 
 
