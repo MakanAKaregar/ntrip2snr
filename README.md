@@ -42,5 +42,8 @@ Ignore QSslSocket SSL errors if you generally trust the caster server and do not
 
 SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY/snr/ssss/</code>, example: <code>$REFL_CODE/2023/snr/AC67/</code>
 
-## Example 2: GNSS SNR real-time streaming for site WARN from EUREF's caster: rtgpsout.unavco.org:2101
+## Example 2: GNSS SNR real-time streaming for site WARN from EUREF's caster: euref-ip.net:2101
 
+#Note: access to EUREF's caster is public and no user and pass are required.
+
+The configuration input parameters for this example are available in ~/example2/<code>ntrip2snr.bnc</code>
