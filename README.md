@@ -30,7 +30,7 @@ Navigate to example1 directory and open <code>ntrip2snr.bnc</code> in a text edi
 
 Default configuration is set for an orbitray site [AC67](https://www.unavco.org/instrumentation/networks/status/nota/overview/AC67) from UNAVCO's caster server (rtgpsout.unavco.org:2101)
 
-Set a directory to store RINEX 3 files via <code> -key rnxPath $REFL_CODE/rinex/ssss/YYYY</code> where [$REFL_CODE](https://github.com/kristinemlarson/gnssrefl/blob/master/docs/pages/README_install.md) is an environmental variable to be used by gnssrefl's [rinex2snr](https://github.com/kristinemlarson/gnssrefl/blob/master/docs/pages/rinex2snr.md) module, YYYY is the year and ssss is the four character station name., example: <code>-key rnxPath $REFL_CODE/rinex/AC67/2023</code>
+Set a directory to store RINEX 3 files via <code> -key rnxPath $REFL_CODE/rinex/ssss/YYYY</code> where [$REFL_CODE](https://github.com/kristinemlarson/gnssrefl/blob/master/docs/pages/README_install.md) is an environmental variable to be used by gnssrefl's [rt_rinex3_snr](https://github.com/kristinemlarson/gnssrefl/blob/master/gnssrefl/rt_rinex3_snr.py) module, YYYY is the year and ssss is the four character station name., example: <code>-key rnxPath $REFL_CODE/rinex/AC67/2023</code>
 
 Before running <code>ntrip2snr.bnc</code>, BNC requires the RINEX header as a separate file with SKL extension stored in <code>$REFL_CODE/rinex/ssss/YYYY</code> (rnxPath). For running the example configuration file, make sure you copy <code>AC67_RTCM.SKL</code> to the mentioned directory. The RINEX header file is often missed in caster servers, thus this <code>.SKL</code> file needs to be created in advance. 
 
@@ -47,3 +47,10 @@ SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY
 #Note: access to EUREF's caster is public and no user and pass are required.
 
 The configuration input parameters for this example are available in ~/example2/<code>ntrip2snr.bnc</code>
+
+Default configuration is set for a GNSS-IR site [WARN](https://epncb.oma.be/_networkdata/siteinfo4onestation.php?station=WARN00DEU) from EUREF's caster caster server (euref-ip.net:2101)
+
+And run <code>ntrip2snr: ./bnc-2.12.18-suse42(debian8)-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/WARN/2023</code>
+
+SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY/snr/ssss/</code>, example: <code>$REFL_CODE/2023/snr/WARN/</code>
+
