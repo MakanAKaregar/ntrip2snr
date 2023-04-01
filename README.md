@@ -6,7 +6,7 @@ The BNC compiled code is available at: https://igs.bkg.bund.de/ntrip/bnc
 I tested Code Executable "v2.12.18 static" for OpenSUSE, Ubuntu, Debian and Raspbian. The compiled file <code>bnc-2.12.18-suse42-64bit-static</code> and 
 <code>bnc-2.12.18-debian8-64bit-static</code> are also available in ntrip2snr repository. 
 
-The following examples convert 1 min RTCM streams to RINEX 3 files and then to SNR-ready files to be used for real-time processing.
+The following examples convert 1 min RTCM streams to RINEX 3 files and then to SNR-ready files to be used for GNSS-IR real-time processing.
 
 ## Example 1: GNSS SNR real-time streaming for site [AC67](https://www.unavco.org/instrumentation/networks/status/nota/overview/AC67) from UNAVCO's caster: rtgpsout.unavco.org:2101
 
