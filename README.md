@@ -60,7 +60,7 @@ You may need to mark the BNC compiled code, <code>run_rinex2snr.sh</code> and <c
 
 <code>chmod +x run_rinex2snr.py</code> 
 
-To run <code>ntrip2snr: ./bnc-2.12.18-suse42(debian8)-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/AC67/2023</code>
+To run ntrip2snr: <code>./bnc-2.12.18-suse42(debian8)-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/AC67/2023</code>
 
 Ignore QSslSocket SSL errors if you generally trust the caster server and do not want to be bothered with this.
 
@@ -88,6 +88,6 @@ The configuration input parameters for this example are available in ~/example2/
 
 Default configuration is now set for a GNSS-IR site [WARN](https://epncb.oma.be/_networkdata/siteinfo4onestation.php?station=WARN00DEU) from EUREF's caster caster server (euref-ip.net:2101)
 
-And run <code>ntrip2snr: ./bnc-2.12.18-suse42(debian8)-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/WARN/2023</code>
+And run ntrip2snr: <code>./bnc-2.12.18-suse42(debian8)-64bit-static -nw -conf ntrip2snr.bnc -key rnxPath $REFL_CODE/rinex/WARN/2023</code>
 
 SNR-ready files are overwritten every minute and stored in <code>$REFL_CODE/YYYY/snr/ssss/</code>, example: <code>$REFL_CODE/2023/snr/WARN/</code>
